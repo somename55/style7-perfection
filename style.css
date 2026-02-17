@@ -161,6 +161,12 @@ a:hover{color:var(--gold)}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
 .reveal.active{opacity:1;transform:translateY(0)}
 
+/* WhatsApp Float */
+.whatsapp-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:9999;transition:transform .3s,box-shadow .3s;animation:wa-pulse 2s infinite}
+.whatsapp-float:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(37,211,102,.6)}
+.whatsapp-float svg{width:32px;height:32px}
+@keyframes wa-pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
 /* === MOBILE === */
 @media(max-width:768px){
   .nav-links{display:none;position:absolute;top:100%;left:0;width:100%;background:rgba(15,25,35,.97);flex-direction:column;padding:24px;gap:16px;backdrop-filter:blur(12px)}

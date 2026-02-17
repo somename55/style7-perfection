@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://style7-perfection.netlify.app/sitemap.xml
